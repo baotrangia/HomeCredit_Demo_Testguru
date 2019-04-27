@@ -20,8 +20,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
         plugin = {"json:target/positive/cucumber.json", "pretty", "html:target/positive/cucumber.html","com.cucumber.listener.ExtentCucumberFormatter"},
         features = "src/test/resources/features",
-        glue = "steps"
-      /*  tags = {"@Login, @AddBusinessUser"}        */
+        glue = "steps",
+       tags = {"@manager-acceptance-test"}
       
         )
 

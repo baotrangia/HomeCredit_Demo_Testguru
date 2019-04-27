@@ -5,45 +5,41 @@ import org.openqa.selenium.support.FindBy;
 
 public class LeftNavigationLocators {
 
-	//dashboard menu 
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[1]/a")
+	//dashboardLnk menu link
+	@FindBy(xpath="//a[contains(@href,'Managerhomepage.php')]")
 	public WebElement dashboardLnk;
+
+	//change password menu link
+	@FindBy(xpath="//a[contains(@href,'PasswordInput.php')]")
+	public WebElement changePasswordLnk;
 	
-	//categories menu 
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[2]")
-	public WebElement categoriesDropDown;
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[2]/a/span[1]")
-	public WebElement categoriesLnk;
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[2]/ul/li[1]/a")
-	public WebElement businessUsrLnk;
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[2]/ul/li[2]/a")
-	public WebElement servicesLnk;
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[2]/ul/li[3]/a")
-	public WebElement categoriesListingLnk;
+	//New Customer menu link 
+	@FindBy(xpath="//a[contains(@href,'addcustomerpage.php')]")
+	public WebElement newCustomerLnk;
+	//Delete Account menu link 
+	@FindBy(xpath="//a[contains(@href,'deleteAccountInput.php')]")
+	public WebElement deleteAccountLnk;
+	//Delete Account menu link 
+	@FindBy(xpath="//a[contains(@href,'MiniStatementInput.php')]")
+	public WebElement miniStatementLnk;
+	//Balance Enquiry menu link 
+	@FindBy(xpath="//a[contains(@href,'BalEnqInput.php')]")
+	public WebElement balanceEnquiryLnk;
+	//Balance Customized StatementInput menu link 
+	@FindBy(xpath="//a[contains(@href,'CustomisedStatementInput.php')]")
+	public WebElement customizedStatementLnk;
+	//Delete Customer DeleteCustomerInput menu link 
+	@FindBy(xpath="//a[contains(@href,'DeleteCustomerInput.php')]")
+	public WebElement deleteCustomerLnk;
+
+	//
+	//logout menu link 
+	@FindBy(xpath="//a[contains(@href,'Logout.php')]")
+	public WebElement logoutLnk;
 	
-	//survey menu 
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[3]")
-	public WebElement surveryDropDown;
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[3]/a")
-	public WebElement surveyLnk;
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[3]/ul/li[1]/a")
-	public WebElement surveyQuestionsLnk;
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[3]/ul/li[2]/a")
-	public WebElement manageSurveyLnk;
-	
-	//suggestion menu 
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[4]/a")
-	public WebElement suggestionLnk;
-	
-	//complaint menu 
-	@FindBy(xpath="//ul[@class='sidebar-menu']/li[5]/a")
-	public WebElement complaintLnk;
-	
-	//logout
-	@FindBy(xpath="//li[contains(@class, 'user-menu')]/a")
-	public WebElement logoutContainer;
-	
-	@FindBy(xpath="//li[contains(@class, 'user-menu')]//ul//a")
-	public WebElement signOutLnk;
+	//New Account menu link 
+	@FindBy(xpath="//a[contains(@href,'addAccount.php')]")
+	public WebElement addAccount;
+
 	
 }

@@ -22,13 +22,52 @@ public class LeftNavigation {
 		leftNavigationObj.dashboardLnk.click();
 	}
 	
+	public void gotoChangePassword()
+	{
+		leftNavigationObj.changePasswordLnk.click();
+	}
+	
+	public void gotoNewCustomer()
+	{
+		leftNavigationObj.newCustomerLnk.click();
+	}
+	
+	public void gotoAddNewAccount()
+	{
+		leftNavigationObj.addAccount.click();
+	}
 	
 	public void signout() throws InterruptedException {
-		leftNavigationObj.logoutContainer.click();
-		Thread.sleep(1000);
+		leftNavigationObj.logoutLnk.click();
+	}
+	public void gotoDeleteAccount()
+	{
+		leftNavigationObj.deleteAccountLnk.click();
+	}
+	public void gotoMiniStatement()
+	{
+		leftNavigationObj.miniStatementLnk.click();
+	}
+	
+	public void gotoBalanceEnquiry()
+	{
+		leftNavigationObj.balanceEnquiryLnk.click();
+	}
+	
+	public void gotoCustomizedStatement()
+	{
+		leftNavigationObj.customizedStatementLnk.click();
+	}
+	
+	public void gotoDeleteCustomer() {
+		leftNavigationObj.deleteCustomerLnk.click();
 	}
 	
 	public  boolean elementHasClass(WebElement element, String desiredClass) {
 		 return element.getAttribute("class").contains(desiredClass);
 	}
+	
+	
+	
+	
 }

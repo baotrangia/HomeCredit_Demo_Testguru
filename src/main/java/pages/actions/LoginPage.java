@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import pages.locators.LoginPageLocators;
 import utilities.SeleniumDriver;
+import utilities.SeleniumHelper;
 
 public class LoginPage {
 
@@ -31,16 +32,18 @@ public class LoginPage {
 		return LoginPageLocators.welcomeTxt.getText();
 	}
 	public String getCurrentPageURL() {
-		return SeleniumDriver.getDriver().getCurrentUrl();
+		return SeleniumHelper.getCurrentPageURL();
+		//return SeleniumDriver.getDriver().getCurrentUrl();
 	}
 	public String getInvalidCredentialsPopupMsg()
 	{
-		String actualBoxMsg = "";
+		return SeleniumHelper.getPopupTxt();
+		/*String actualBoxMsg = "";
 	 	Alert alt = SeleniumDriver.getDriver().switchTo().alert();
 		actualBoxMsg = alt.getText(); // get content of the Alter Message
 		alt.accept();
 		
-		return actualBoxMsg;
+		return actualBoxMsg;*/
 	}
 	
 
